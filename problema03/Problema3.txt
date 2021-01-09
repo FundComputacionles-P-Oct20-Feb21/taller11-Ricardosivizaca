@@ -1,0 +1,43 @@
+1.  Inicio
+2.  funcion principal()
+3.  	cedula, i[0-n]
+4.  	cliente, String [0-n]
+5.  	opcion, i[0-n]
+6.  	Escribir "Nombre del cliente:"
+7.  	Leer cliente
+8.  	Escribir "Cedula del cliente:"
+9.  	Leer cedula
+10. 	Escribir "Ingrese la opcion deseada:"
+11. 	Escribir "1. si desea pagar la luz"
+12. 	Escribir "2. si desea pagar el predio del inmueble"
+13. 	Leer opcion 
+14. 	Si opcion == 1 Entonces
+15.		calcularValorLuz (cliente,cedula) 
+16. 	Sino
+17.		Si opcion == 2 Entonces
+18.			calcularPredio (cliente,cedula)
+19.		Fin si
+20. 	Fin si
+21. fin funcion principal 
+22.
+23. funcion calcularValorLuz(cliente, x; cedula, i) 
+24.	precio, d[0-n]
+25.	valorKilowatio, d[0-n]
+26.	kilowatiosConsumidos, i[0-n]
+27.	Escribir "Cual es el precio del Kilowatio"
+28.	Leer valorKilowatio
+29.	Escribir "Cual es el número consumido de kilowatios del mes"
+30.	Leer kilowatiosConsumidos
+31.	precio <-- valorKilowatio * kilowatiosConsumidos
+32.	Escribir "Cliente " + cliente + " con cédula " + cedula + " debe cancelar el valor de: " + precio
+33. fin funcion calcularValorLuz 
+34.
+35. funcion calcularPredio(cliente, x; cedula, i)
+36.	inmueble, d[0-n]
+37.	predio, d[0-n]
+38.	Escribir "Cual es el precio del inmueble "
+39.	Leer inmueble
+40.	predio <-- inmueble * 0.2
+41.	Escribir "Cliente " + cliente + " con cédula " + cedula + " tiene un bien inmueble valorado en $" + inmueble +" y tiene que pagar de predio $" + predio
+42. fin funcion calcularPredio 
+43. Fin
